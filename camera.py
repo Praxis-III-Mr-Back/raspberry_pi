@@ -5,7 +5,7 @@ import time
 
 class Camera:
     def __init__(self):
-        self.camera = Picamelibcamera-hello --list-camerasra2()
+        self.camera = Picamera2()
         self.preview_config = camera.create_preview_configuration()
         self.capture_config = camera.create_still_configuration()
         self.camera.configure(self.preview_config)
