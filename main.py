@@ -1,5 +1,14 @@
+from kinematics import Kinematics
+from servo import Servo
+from camera import Camera
+from vision import Vision
+import math
+import time
+
 kin = Kinematics(5)
 joint_servo = Servo(17)
+camera = Camera()
+vision = Vision()
 
 while True:
     x = float(input("Enter x: "))
