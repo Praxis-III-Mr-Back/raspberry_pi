@@ -50,6 +50,10 @@ class Vision:
 
         print("--- %s seconds ---" % (time.time() - start_time))
 
+    def upload_and_analyze(self, image_path):
+        self.upload_image(image_path)
+        self.analyze_image(image_path)
+
 if __name__ == "__main__":
     vision = Vision()
     file_name = 'notplant.png'

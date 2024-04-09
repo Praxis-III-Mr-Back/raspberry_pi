@@ -14,8 +14,8 @@ class Camera:
 
     def take_image(self, path="image.jpg"):
         self.camera.switch_mode_and_capture_file(self.capture_config, path)
-        image = Image.open(path)
-        return image
+        # image = Image.open(path)
+        # return image
 
 if __name__ == "__main__":
     camera = Camera()
